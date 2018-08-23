@@ -1,0 +1,6 @@
+framework module weexRepy {
+  umbrella header "weexRepy-umbrella.h"
+
+  export *
+  module * { export * }
+}

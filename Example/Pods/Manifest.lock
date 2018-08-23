@@ -1,0 +1,27 @@
+PODS:
+  - Expecta (1.0.6)
+  - Specta (1.0.7)
+  - weexRepy (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta
+  - weexRepy (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Expecta
+    - Specta
+
+EXTERNAL SOURCES:
+  weexRepy:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  weexRepy: d1f6bae21c8adf0b073353c9fb64f93efa5f9095
+
+PODFILE CHECKSUM: ef1fb975ff00a31f81b6336e5189641d0329bb89
+
+COCOAPODS: 1.5.3
