@@ -1,0 +1,7 @@
+use_frameworks!
+target 'weexRepy_Tests' do
+  pod 'weexRepy', :path => '../'
+  
+  pod 'Specta'
+    pod 'Expecta'
+end
