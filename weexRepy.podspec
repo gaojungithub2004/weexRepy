@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'weexRepy'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of weexRepy.'
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +38,12 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 3.0'
+  s.dependency 'WeexSDK', '~> 0.19.0'
+
+  s.subspec 'DownFile' do |ss|
+    ss.source_files  = "DownFile/*.{c,h,m,mm,S}"
+    ss.public_header_files = "DownFile/*.h"
+    ss.requires_arc  = true
+  end
 end
