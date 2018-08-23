@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 3.0'
-  s.dependency 'WeexSDK'
+  s.dependency 'WeexSDK', '0.19.0'
 
   s.subspec 'DownFile' do |ss|
     ss.source_files  = "DownFile/*.{c,h,m,mm,S}"
