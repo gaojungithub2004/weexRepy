@@ -40,10 +40,4 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 3.0'
   s.dependency 'WeexSDK', '~> 0.18.0'
-
-  s.subspec 'DownFile' do |ss|
-    ss.source_files  = "DownFile/*.{c,h,m,mm,S}"
-    ss.public_header_files = "DownFile/*.h"
-    ss.requires_arc  = true
-  end
 end
