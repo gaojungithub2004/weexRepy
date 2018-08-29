@@ -7,7 +7,7 @@
 //
 
 #import "BsFileManager.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 #import "Constant.h"
 #import "YWFilePreviewController.h"
 
