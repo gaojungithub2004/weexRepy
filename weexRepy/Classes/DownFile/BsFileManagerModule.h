@@ -8,7 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "WXModuleProtocol.h"
+#import <WeexSDK/WeexSDK.h>
 
 @interface BsFileManagerModule : NSObject <WXModuleProtocol>
 
