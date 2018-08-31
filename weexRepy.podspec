@@ -30,12 +30,12 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'weexRepy/Classes/**/*.{h,m}'
-  
-  # s.resource_bundles = {
-  #   'weexRepy' => ['weexRepy/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
+
+   s.subspec 'DownFile' do |ss|
+    ss.source_files  = "BMTransition/*.{c,h,m,mm,S}"
+    ss.public_header_files = "BMTransition/*.h"
+    ss.requires_arc  = true
+  end
 end
