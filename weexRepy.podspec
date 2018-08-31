@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'weexRepy'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of weexRepy.'
 
 # This description is used to generate tags and improve search results.
@@ -34,8 +34,8 @@ TODO: Add long description of the pod here.
   s.frameworks = 'UIKit'
 
    s.subspec 'DownFile' do |ss|
-    ss.source_files  = "BMTransition/*.{c,h,m,mm,S}"
-    ss.public_header_files = "BMTransition/*.h"
+    ss.source_files  = "weexRepy/Classes/DownFile/**/*.{c,h,m,mm,S}"
+    ss.public_header_files = "weexRepy/Classes/DownFile/**/*.h"
     ss.requires_arc  = true
   end
 end
