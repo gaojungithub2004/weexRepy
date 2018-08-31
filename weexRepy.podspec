@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
 
    s.subspec 'DownFile' do |ss|
     ss.source_files  = "weexRepy/Classes/DownFile/**/*.{c,h,m,mm,S}"
-    ss.public_header_files = "Classes/DownFile/**/*.h"
+    ss.public_header_files = "weexRepy/Classes/DownFile/**/*.h"
     ss.requires_arc  = true
     s.dependency 'AFNetworking'
   end
