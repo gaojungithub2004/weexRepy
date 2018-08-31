@@ -16,8 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BC1D0C807D5411096F44FC7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		553311447740F1336E698F3B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0BC1D0C807D5411096F44FC7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		553311447740F1336E698F3B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -28,7 +28,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		ACB875153C463B5CBDD4B116 /* Pods_weexRepy_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weexRepy_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0288A02DB2FCC54713C5200 /* weexRepy.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = weexRepy.podspec; path = ../weexRepy.podspec; sourceTree = "<group>"; };
+		D0288A02DB2FCC54713C5200 /* weexRepy.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = weexRepy.podspec; path = ../weexRepy.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DFAC803294CCA298F1F69D46 /* Pods-weexRepy_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexRepy_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weexRepy_Tests/Pods-weexRepy_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB908EAFF69F7EB1E7FDAC0A /* Pods-weexRepy_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexRepy_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-weexRepy_Tests/Pods-weexRepy_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +150,7 @@
 				ORGANIZATIONNAME = gaojungithub2004;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 8A2YF444AZ;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -209,12 +210,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-weexRepy_Tests/Pods-weexRepy_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
 				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
 				"${BUILT_PRODUCTS_DIR}/weexRepy/weexRepy.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/weexRepy.framework",
@@ -326,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFAC803294CCA298F1F69D46 /* Pods-weexRepy_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8A2YF444AZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -349,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB908EAFF69F7EB1E7FDAC0A /* Pods-weexRepy_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8A2YF444AZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

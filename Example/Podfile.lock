@@ -1,7 +1,26 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - Expecta (1.0.6)
   - Specta (1.0.7)
-  - weexRepy (0.1.0)
+  - weexRepy (0.1.2):
+    - AFNetworking
+    - weexRepy/DownFile (= 0.1.2)
+  - weexRepy/DownFile (0.1.2):
+    - AFNetworking
 
 DEPENDENCIES:
   - Expecta
@@ -10,6 +29,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - Expecta
     - Specta
 
@@ -18,9 +38,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  weexRepy: d1f6bae21c8adf0b073353c9fb64f93efa5f9095
+  weexRepy: 3cb8267ebdc9c1b0e57707291e2e69dc972d4a50
 
 PODFILE CHECKSUM: ef1fb975ff00a31f81b6336e5189641d0329bb89
 
