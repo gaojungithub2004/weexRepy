@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
     ss.public_header_files = "weexRepy/Classes/DownFile/**/*.h"
     ss.requires_arc  = true
     s.dependency 'AFNetworking'
+    s.dependency 'WeexSDK'
   end
 end
