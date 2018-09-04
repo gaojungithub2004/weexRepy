@@ -26,6 +26,21 @@ Pod::Spec.new do |s|
   s.source_files  = "ios/Sources/*.{h,m,mm}"
   
   s.requires_arc = true
-  s.dependency "WeexPluginLoader"
-  s.dependency "WeexSDK"
+  
+  s.subspec 'DownFile' do |ss|
+    ss.source_files  = "ios/Sources/DownFile/**/*.{,h,m}"
+    ss.frameworks    = "UIKit"
+    ss.public_header_files = "ios/Sources/DownFile/**/*.{h,m}"
+    ss.requires_arc  = true
+    ss.dependency "WeexPluginLoader"
+    ss.dependency "WeexSDK"
+    ss.dependency "AFNetworking"
+  end
+
+  s.subspec 'Else' do |ss|
+    ss.source_files  = "ios/Sources/Else/**/*.{,h,m}"
+    ss.frameworks    = "UIKit"
+    ss.public_header_files = "ios/Sources/Else/**/*.{h,m}"
+    ss.requires_arc  = true
+  end
 end

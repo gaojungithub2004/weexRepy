@@ -1,0 +1,50 @@
+{
+  "name": "Weexford",
+  "version": "0.0.1",
+  "summary": "Weex Plugin",
+  "description": "Weexplugin Source Description",
+  "homepage": "https://github.com",
+  "license": {
+    "type": "Copyright",
+    "text": "            copyright\n"
+  },
+  "authors": {
+    "yourname": "youreamail"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "please input the url of your code in github",
+    "tag": "please input you github tag"
+  },
+  "source_files": "ios/Sources/*.{h,m,mm}",
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "DownFile",
+      "source_files": "ios/Sources/DownFile/**/*.{,h,m}",
+      "frameworks": "UIKit",
+      "public_header_files": "ios/Sources/DownFile/**/*.{h,m}",
+      "requires_arc": true,
+      "dependencies": {
+        "WeexPluginLoader": [
+
+        ],
+        "WeexSDK": [
+
+        ],
+        "AFNetworking": [
+
+        ]
+      }
+    },
+    {
+      "name": "Else",
+      "source_files": "ios/Sources/Else/**/*.{,h,m}",
+      "frameworks": "UIKit",
+      "public_header_files": "ios/Sources/Else/**/*.{h,m}",
+      "requires_arc": true
+    }
+  ]
+}
