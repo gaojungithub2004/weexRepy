@@ -1,1 +1,0 @@
-../../../../../weexRepy/Classes/DownFile/BsFileManagerModule.h
