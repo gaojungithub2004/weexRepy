@@ -10,9 +10,12 @@
 #import "BsFileManager.h"
 #import "PreviewViewController.h"
 #import "Constant.h"
+#import <WeexPluginLoader/WeexPluginLoader.h>
+
 
 @implementation BsFileManagerModule
 @synthesize weexInstance;
+WX_PlUGIN_EXPORT_MODULE(fileManager, BsFileManagerModule)
 WX_EXPORT_METHOD(@selector(fileExist:callback:))
 WX_EXPORT_METHOD(@selector(downloadFile:success:failure:progress:))
 WX_EXPORT_METHOD(@selector(previewFile:))
