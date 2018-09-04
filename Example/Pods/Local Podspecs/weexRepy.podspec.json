@@ -19,17 +19,23 @@
     "ios": "8.0"
   },
   "frameworks": "UIKit",
-  "dependencies": {
-    "AFNetworking": [
-
-    ]
-  },
   "subspecs": [
     {
       "name": "DownFile",
       "source_files": "weexRepy/Classes/DownFile/**/*.{c,h,m,mm,S}",
       "public_header_files": "weexRepy/Classes/DownFile/**/*.h",
-      "requires_arc": true
+      "requires_arc": true,
+      "dependencies": {
+        "AFNetworking": [
+
+        ],
+        "WeexSDK": [
+
+        ],
+        "WeexPluginLoader": [
+
+        ]
+      }
     }
   ]
 }

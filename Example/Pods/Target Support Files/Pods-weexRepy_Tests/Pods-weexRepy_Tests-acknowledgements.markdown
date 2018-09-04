@@ -71,6 +71,16 @@ THE SOFTWARE.
 
 
 
+## WeexPluginLoader
+
+Alibaba-INC copyright
+
+
+## WeexSDK
+
+Alibaba-INC copyright
+
+
 ## weexRepy
 
 Copyright (c) 2018 gaojungithub2004 <gaojun2004@icloud.com>
