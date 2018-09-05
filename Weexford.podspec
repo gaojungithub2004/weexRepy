@@ -23,9 +23,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
 
   s.source       = { :git => 'https://github.com/gaojungithub2004/weexford.git', :tag => s.version.to_s }
-  s.source_files  = "ios/Sources/*.{h,m,mm}"
-  
-  s.requires_arc = true
   
   s.subspec 'DownFile' do |ss|
     ss.source_files  = "ios/Sources/DownFile/**/*.{h,m}"
