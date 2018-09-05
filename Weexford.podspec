@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "Weexford"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Weex Plugin"
 
   s.description  = <<-DESC
@@ -25,19 +25,19 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/gaojungithub2004/weexford.git', :tag => s.version.to_s }
   
   s.subspec 'DownFile' do |ss|
-    ss.source_files  = "ios/Sources/DownFile/**/*.{h,m}"
+    ss.source_files  = "ios/Sources/DownFile/*.{h,m}"
     ss.frameworks    = "UIKit"
-    ss.public_header_files = "ios/Sources/DownFile/**/*.{h}"
+    ss.public_header_files = "ios/Sources/DownFile/*.{h}"
     ss.requires_arc  = true
     ss.dependency "WeexPluginLoader"
     ss.dependency "WeexSDK"
-    ss.dependency "AFNetworking"
-  end
 
-  s.subspec 'Else' do |ss|
-    ss.source_files  = "ios/Sources/Else/*.{h,m}"
-    ss.frameworks    = "UIKit"
-    ss.public_header_files = "ios/Sources/Else/*.{h}"
-    ss.requires_arc  = true
+      ss.subspec 'FileManager' do |f|
+          f.source_files  = "ios/Sources/DownFile/FileManager/*.{h,m}"
+          f.frameworks    = "QuickLook"
+          f.public_header_files = "ios/Sources/DownFile/FileManager/*.{h}"
+          f.requires_arc  = true
+          f.dependency "AFNetworking"
+      end
   end
 end

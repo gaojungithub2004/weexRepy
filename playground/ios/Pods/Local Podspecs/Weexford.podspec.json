@@ -9,23 +9,21 @@
     "text": "            copyright\n"
   },
   "authors": {
-    "yourname": "youreamail"
+    "frod": "gaojun2004@icloud.com"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source": {
-    "git": "please input the url of your code in github",
-    "tag": "please input you github tag"
+    "git": "https://github.com/gaojungithub2004/weexford.git",
+    "tag": "0.0.1"
   },
-  "source_files": "ios/Sources/*.{h,m,mm}",
-  "requires_arc": true,
   "subspecs": [
     {
       "name": "DownFile",
-      "source_files": "ios/Sources/DownFile/**/*.{,h,m}",
+      "source_files": "ios/Sources/DownFile/**/*.{h,m}",
       "frameworks": "UIKit",
-      "public_header_files": "ios/Sources/DownFile/**/*.{h,m}",
+      "public_header_files": "ios/Sources/DownFile/**/*.{h}",
       "requires_arc": true,
       "dependencies": {
         "WeexPluginLoader": [
@@ -36,14 +34,17 @@
         ],
         "AFNetworking": [
 
+        ],
+        "GJRepy": [
+
         ]
       }
     },
     {
       "name": "Else",
-      "source_files": "ios/Sources/Else/**/*.{,h,m}",
+      "source_files": "ios/Sources/Else/*.{h,m}",
       "frameworks": "UIKit",
-      "public_header_files": "ios/Sources/Else/**/*.{h,m}",
+      "public_header_files": "ios/Sources/Else/*.{h}",
       "requires_arc": true
     }
   ]

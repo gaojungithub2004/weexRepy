@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - ATSDK-Weex (0.0.1)
+  - GJRepy (0.1.3)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -24,6 +25,7 @@ PODS:
     - Weexford/Else (= 0.0.1)
   - Weexford/DownFile (0.0.1):
     - AFNetworking
+    - GJRepy
     - WeexPluginLoader
     - WeexSDK
   - Weexford/Else (0.0.1)
@@ -46,6 +48,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - ATSDK-Weex
+    - GJRepy
     - SDWebImage
     - SocketRocket
     - WeexPluginLoader
@@ -59,9 +62,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   ATSDK-Weex: 1b27558f4336d77fb97704d34fc6ad1fd468592c
+  GJRepy: 76283e7c6ca2d2161e6a01d0cc47f98f5fa75e26
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
-  Weexford: 511daabf5e9283e2387add9d474ce3fa0173984b
+  Weexford: cfc227f80d45a08f7bd43eea6f07406c3f99b4c4
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
   WeexSDK: ac56f255ce9a48e93ebc2e003956ab20da33321d
   WXDevtool: 5135a5c6f4426fb635babb9eacfa14352bc66dc6
