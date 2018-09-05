@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.subspec 'DownFile' do |ss|
-    ss.source_files  = "ios/Sources/DownFile/**/*.{,h,m}"
+    ss.source_files  = "ios/Sources/DownFile/**/*.{h,m}"
     ss.frameworks    = "UIKit"
     ss.public_header_files = "ios/Sources/DownFile/**/*.{h,m}"
     ss.requires_arc  = true
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Else' do |ss|
-    ss.source_files  = "ios/Sources/Else/*.{,h,m}"
+    ss.source_files  = "ios/Sources/Else/*.{h,m}"
     ss.frameworks    = "UIKit"
     ss.public_header_files = "ios/Sources/Else/*.{h,m}"
     ss.requires_arc  = true
