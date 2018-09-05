@@ -17,12 +17,12 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.authors      = {
-                     "yourname" =>"youreamail"
+                     "frod" =>"gaojun2004@icloud.com"
                    }
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => 'please input the url of your code in github', :tag => 'please input you github tag' }
+  s.source       = { :git => 'https://github.com/gaojungithub2004/weexford.git', :tag => s.version.to_s }
   s.source_files  = "ios/Sources/*.{h,m,mm}"
   
   s.requires_arc = true
@@ -38,9 +38,9 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Else' do |ss|
-    ss.source_files  = "ios/Sources/Else/**/*.{,h,m}"
+    ss.source_files  = "ios/Sources/Else/*.{,h,m}"
     ss.frameworks    = "UIKit"
-    ss.public_header_files = "ios/Sources/Else/**/*.{h,m}"
+    ss.public_header_files = "ios/Sources/Else/*.{h,m}"
     ss.requires_arc  = true
   end
 end
